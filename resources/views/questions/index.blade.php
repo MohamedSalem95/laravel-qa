@@ -16,8 +16,7 @@
                                 </h3>
                                 <p class="font-weight-bold"> 
                                     asked by 
-                                    <a href="{{ $question->user->url }}"> {{ $question->user->name }} </a> 
-                                    {{ $question->created_date }}  
+                                    <a href="{{ $question->user->url }}"> {{ $question->user->name }} </a>                                     {{ $question->created_date }}  
                                 </p>
                                 <p> {{ str_limit($question->body, 200) }} </p>
                             </div>
