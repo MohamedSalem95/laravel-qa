@@ -12,3 +12,38 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+
+.counter {
+
+  margin-right: 30px;
+  text-align: center;
+  font-size: 10px;
+
+  strong {
+    display: block;
+  }
+
+  .votes, .answers {
+    width: 60px;
+    height: 60px;
+  }
+
+  .status {
+    &.unanswered {
+      border: 1px solid #ffffff; 
+    }
+
+    &.answered {
+      border: 1px solid $green;
+    }
+
+    &.answer-accepted {
+      border: 1px solid $green;
+      background-color: $green;
+      color: #ffffff;
+    }
+  }
+
+
+}
